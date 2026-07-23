@@ -19,5 +19,5 @@ python3 ini.py
 
 ## Требования
 - Linux с nfnetlink_queue
-- nfqws (сборка из zapret)
-- права root
+- nfqws
+- nftables
