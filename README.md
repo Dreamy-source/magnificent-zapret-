@@ -1,2 +1,24 @@
-# magnificent-zapret-
-magnificent - linux zapret
+# magnificent
+
+DPI обход на Linux через nfqws с автоочисткой, проверкой зависимостей и меню.
+
+## Возможности
+- 🛡️ Обход DPI через nfqueue (nfqws)
+- 📋 Поддержка hostlist (149 000+ доменов)
+- 🔄 Множественные стратегии обхода (QUIC, TCP, UDP)
+- 🧹 Автоочистка nftables и очередей перед запуском
+- 📦 Автоустановка зависимостей (nftables, yay, nfqws)
+- 🎨 Цветное меню с навигацией
+
+## Быстрый старт
+```bash
+#!/bin/bash
+sudo pacman -S python
+python3 ini.py
+./runner.sh
+```
+
+## Требования
+- Linux с nfnetlink_queue
+- nfqws (сборка из zapret)
+- права root
