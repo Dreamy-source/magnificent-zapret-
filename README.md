@@ -13,7 +13,7 @@ DPI обход на Linux через nfqws с автоочисткой, пров
 ## Быстрый старт
 ```bash
 sudo pacman -S python
-python3 ini.py
+sudo pacman -S --noconfirm python
 ./runner.sh
 ```
 
