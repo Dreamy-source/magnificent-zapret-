@@ -1,0 +1,19 @@
+# redirect.nft
+
+# inet - IPv4, IPv6
+# mangle - modificate packets, before sending
+# type filter - filter packets on ...
+# hook output - call this chain, for every process
+# priority -150 - earlier than anyone else
+# policy accept - if success, then go
+# tcp dport { 80, 443 } - if protocol is TCP, and port is 80 (HTTP) or 443 (HTTPS)
+# counter - just counter of packets, bytes
+# queue num 220 - do not send this packet straight to the web, send him into queue with id 220
+# bypass - if programm listening 220 droped, or do not reasoning - send him right now
+
+table inet magnificent {
+    chain mangle_output {
+        type filter hook output priority -150; policy accept;
+        tcp dport { 80, 443 } counter queue num 220 bypass
+    }
+}
