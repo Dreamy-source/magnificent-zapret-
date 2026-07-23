@@ -15,6 +15,8 @@ DPI обход на Linux через nfqws с автоочисткой, пров
 ## Быстрый старт
 ```bash
 sudo pacman -S --noconfirm python
+git clone https://github.com/Dreamy-source/magnificent-zapret-
+cd magnificent-zapret-
 python3 ini.py
 ./runner.sh
 # после того, как попадете в меню, выберите второй выбор (2) для установки всех зависимостей
