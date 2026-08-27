@@ -1,6 +1,5 @@
 # magnificent
 - Поддерживаемые ОС: Arch Linux
-- NOTE: некоторые листы, бинарник google, и некоторые фичи взяты из оригинального zapret (https://github.com/flowseal/zapret-discord-youtube)
 
 DPI обход на Linux через nfqws с автоочисткой, проверкой зависимостей и меню.
 
